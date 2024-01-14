@@ -18,7 +18,7 @@ async function getData(id: string) {
 
 export default async function GiveProduct(props: { params: { id: string } }) {
   const product = await getData(props.params.id);
-  console.log(product);
+  // console.log(product);
 
   return (
     <div>
