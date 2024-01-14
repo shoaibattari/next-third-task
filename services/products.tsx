@@ -19,7 +19,12 @@ export function getById(id: number) {
   return data.find((p: { id: number }) => p.id === Number(id));
 }
 
-export function save(id:number,   name: string, description: string, price: string) {
+export function save(
+  id: number,
+  name: string,
+  description: string,
+  price: string
+) {
   const data = getAll();
   data.push({
     id: data.length + 1,
@@ -29,3 +34,4 @@ export function save(id:number,   name: string, description: string, price: stri
   });
   fs.writeFileSync(filePath, JSON.stringify(data));
 }
+

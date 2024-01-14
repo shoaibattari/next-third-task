@@ -18,9 +18,9 @@ export async function POST(request: NextRequest, res: NextResponse) {
     const req = await request.json();
     console.log("Request Body:", req);
 
-    save(req.name, req.description, req.price);
-
-    return NextResponse.json({});
+    save(req.id, req.name, req.description, req.price);
+    const data = getAll()
+    return NextResponse.json(data);
   } catch (error) {
     console.error("Error parsing JSON or saving data:", error);
 
@@ -30,3 +30,4 @@ export async function POST(request: NextRequest, res: NextResponse) {
     );
   }
 }
+
