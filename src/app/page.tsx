@@ -33,7 +33,7 @@ export default async function Home() {
         <p>API Routes and Data Fetching: </p>
         <p>TSK-000-68</p>
       </div>
-      <div className="grid md:grid-cols-3 items-center md:ml-12">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 items-center md:ml-12">
         {data.map((prod: Product) => (
           <div
             className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0"
