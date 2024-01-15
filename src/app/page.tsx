@@ -26,13 +26,14 @@ export default async function Home() {
   const data:Product[] = await getData();
 
   return (
-    <div>
+    <div  >
       <div className="text-center flex justify-around p-6 ">
         <p>NextJS Internship </p>
         <p>Shoaib Memon</p>
         <p>API Routes and Data Fetching: </p>
         <p>TSK-000-68</p>
       </div>
+      <div className="text-center">
       {data.map((prod: Product) => (
         <div key={prod.id}>
           <Link href={`/${prod.id}`}>
@@ -40,6 +41,7 @@ export default async function Home() {
           </Link>
         </div>
       ))}
+    </div>
     </div>
   );
 }
