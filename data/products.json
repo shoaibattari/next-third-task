@@ -16,5 +16,11 @@
         "name": "Product Name 3",
         "description": "Product Description 3",
         "price": "310.99"
+    },
+    {
+        "id": 4,
+        "name": "Product Name 4",
+        "description": "Product Description 4",
+        "price": "410.99"
     }
 ]
