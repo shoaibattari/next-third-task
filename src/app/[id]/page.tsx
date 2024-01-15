@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 async function getData(id: number) {
-  const res = await fetch(`https://next-third-task.vercel.app/api/products/${id}`, {
+  const res = await fetch(`https://shoaib-third-task.vercel.app/api/products/${id}`, {
     cache: "no-cache",
   });
   if (!res.ok) {
