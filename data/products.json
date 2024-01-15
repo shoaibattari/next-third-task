@@ -1,26 +1,26 @@
 [
     {
         "id": 1,
-        "name": "Product Name 1",
-        "description": "Product Description 1",
-        "price": "10.99"
-    },
-    {
+        "name": "Cozy Cloud Knit Sweater",
+        "description": "Embrace warmth and comfort with this ultra-soft knit sweater, featuring a relaxed fit, ribbed cuffs and hem, and a cozy cloud-like texture. Perfect for layering or wearing solo, this sweater is sure to become a fall and winter favorite.",
+        "price": "49.99"
+      },
+      {
         "id": 2,
-        "name": "Product Name 2",
-        "description": "Product Description 2",
-        "price": "210.99"
-    },
-    {
+        "name": "Smart Travel Backpack",
+        "description": "Stay organized and connected on the go with this sleek and functional backpack. Featuring multiple compartments, a built-in charging port, and water bottle pockets, this bag is perfect for business trips, weekend getaways, or everyday adventures.",
+        "price": "79.95"
+      },
+      {
         "id": 3,
-        "name": "Product Name 3",
-        "description": "Product Description 3",
-        "price": "310.99"
-    },
-    {
+        "name": "Vibrant Sunset Scented Candle",
+        "description": "Fill your home with the warm and inviting aroma of a tropical sunset. This soy wax candle features notes of mango, coconut, and citrus, creating a relaxing and invigorating atmosphere. Enjoy up to 50 hours of burn time.",
+        "price": "24.99"
+      },
+      {
         "id": 4,
-        "name": "Product Name 4",
-        "description": "Product Description 4",
-        "price": "410.99"
-    }
+        "name": "Noise-Canceling Wireless Headphones",
+        "description": "Experience pure audio bliss with these noise-canceling wireless headphones. Immerse yourself in your music, podcasts, or audiobooks without distractions, thanks to the advanced noise-cancellation technology. Enjoy long-lasting battery life and comfortable over-ear design.",
+        "price": "149.99"
+      }
 ]
