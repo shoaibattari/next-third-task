@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 async function getData() {
-  const res = await fetch("http://localhost:3000/api/products", {
+  const res = await fetch("https://next-third-task.vercel.app/api/products", {
     cache: "no-store",
   });
 
