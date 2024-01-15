@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: `product `,
@@ -6,9 +7,12 @@ export const metadata: Metadata = {
 };
 
 async function getData(id: number) {
-  const res = await fetch(`https://shoaib-third-task.vercel.app/api/products/${id}`, {
-    cache: "no-cache",
-  });
+  const res = await fetch(
+    `https://shoaib-third-task.vercel.app/api/products/${id}`,
+    {
+      cache: "no-cache",
+    }
+  );
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
@@ -21,21 +25,26 @@ export default async function GiveProduct(props: { params: { id: number } }) {
   console.log(product);
 
   return (
-    <div>
-      <div className="flex  justify-center mt-32">
-        <div className=" w-1/2  divide-y">
-          
-            <div>
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                {product.name}
-              </h1>
-              <p className="mt-4 text-1xl sm:text-2xl text-gray-500">
-                {product.description}
-              </p>
-              <p className="mt-4 text-1xl sm:text-2xl text-gray-500">
-                {product.price}
-              </p>
-            </div>
+    <div className="flex justify-center mt-28">
+      <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+        <div className="rounded-2xl bg-gray-700  py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+          <div className="mx-auto max-w-xs px-8">
+            <p className=" font-semibold text-white text-3xl">
+              {product.name}
+            </p>
+            <p className="mt-6 flex items-baseline justify-center gap-x-2">
+              <span className="text-5xl font-bold tracking-tight text-white">
+                ${product.price}
+              </span>
+              <span className="text-sm font-semibold leading-6 tracking-wide text-white">
+                USD
+              </span>
+            </p>
+
+            <p className="mt-6 text-s leading-5 text-white">
+              {product.description}
+            </p>
+          </div>
         </div>
       </div>
     </div>
