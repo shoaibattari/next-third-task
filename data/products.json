@@ -1,1 +1,20 @@
-[{"id":1,"name":"Product Name 1","description":"Product Description 1","price":"10.99"},{"id":2,"name":"Product Name 2","description":"Product Description 2","price":"210.99"},{"id":3,"name":"Product Name 3","description":"Product Description 3","price":"310.99"}]
+[
+    {
+        "id": 1,
+        "name": "Product Name 1",
+        "description": "Product Description 1",
+        "price": "10.99"
+    },
+    {
+        "id": 2,
+        "name": "Product Name 2",
+        "description": "Product Description 2",
+        "price": "210.99"
+    },
+    {
+        "id": 3,
+        "name": "Product Name 3",
+        "description": "Product Description 3",
+        "price": "310.99"
+    }
+]

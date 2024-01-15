@@ -1,15 +1,11 @@
+import { Product } from "@/app/types/type";
 import { getAll, save } from "../../../../services/products";
 import { NextRequest, NextResponse } from "next/server";
 
-type IProduct = {
-  id?: number;
-  name: string;
-  description: string;
-  price: string;
-};
+
 
 export async function GET(request: NextRequest) {
-  const products = getAll();
+  const products:Product[] = getAll();
   return NextResponse.json(products);
 }
 
@@ -19,7 +15,7 @@ export async function POST(request: NextRequest, res: NextResponse) {
     console.log("Request Body:", req);
 
     save(req.id, req.name, req.description, req.price);
-    const data = getAll()
+    const data:Product[]  = getAll()
     return NextResponse.json(data);
   } catch (error) {
     console.error("Error parsing JSON or saving data:", error);

@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Metadata } from "next";
 import Link from "next/link";
+import { Product } from "./types/type";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,14 +21,9 @@ async function getData() {
 
   return res.json();
 }
-type Product = {
-  id?: number;
-  name: string;
-  description: string;
-  price: string;
-};
+
 export default async function Home() {
-  const data = await getData();
+  const data:Product[] = await getData();
 
   return (
     <div>

@@ -1,12 +1,5 @@
 import fs from "fs";
 import path from "path";
-
-interface Iproducts {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-}
 const filePath = path.join(process.cwd(), "data", "products.json");
 
 export function getAll() {
@@ -16,11 +9,11 @@ export function getAll() {
 
 export function getById(id: number) {
   const data = getAll();
-  return data.find((p: { id: number }) => p.id === Number(id));
+  return data.find((p: { id: number }) => p.id === (id));
 }
 
 export function save(
-  id: number,
+  id: string| number,
   name: string,
   description: string,
   price: string
